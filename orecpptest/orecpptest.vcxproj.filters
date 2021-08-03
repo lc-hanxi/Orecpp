@@ -13,18 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\time">
+      <UniqueIdentifier>{91a754e3-5e96-48ba-aff5-8e58dff08998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\utils">
+      <UniqueIdentifier>{aee94430-583d-477c-87a8-3d85ef6dd62c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\time">
+      <UniqueIdentifier>{1f125ce1-9861-407c-a9e6-ebb48a4b153e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="orecpptest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\time\TimeComponents.cpp">
+      <Filter>源文件\time</Filter>
+    </ClCompile>
     <ClCompile Include="src\time\DateComponents.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time\DateTimeComponents.cpp">
+      <Filter>源文件\time</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\time\DateComponents.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\time</Filter>
+    </ClInclude>
+    <ClInclude Include="include\time\TimeComponents.h">
+      <Filter>头文件\time</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\Constants.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\time\DateTimeComponents.h">
+      <Filter>头文件\time</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

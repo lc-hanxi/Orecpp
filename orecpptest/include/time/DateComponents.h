@@ -1,5 +1,5 @@
-#ifndef _DATA_COMPONENTS_H_
-#define _DATA_COMPONENTS_H_
+#ifndef _DATE_COMPONENTS_H_
+#define _DATE_COMPONENTS_H_
 
 #include <stdint.h>
 
@@ -25,6 +25,7 @@ class MonthDayFactory;
 class DateComponents 
 {
 public:
+    DateComponents() = default;
     /** Build a date from its components.
      * @param year year number (may be 0 or negative for BC years)
      * @param month month number from 1 to 12

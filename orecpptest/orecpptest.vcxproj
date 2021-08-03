@@ -117,6 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,9 +143,14 @@
   <ItemGroup>
     <ClCompile Include="orecpptest.cpp" />
     <ClCompile Include="src\time\DateComponents.cpp" />
+    <ClCompile Include="src\time\DateTimeComponents.cpp" />
+    <ClCompile Include="src\time\TimeComponents.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\time\DateComponents.h" />
+    <ClInclude Include="include\time\DateTimeComponents.h" />
+    <ClInclude Include="include\time\TimeComponents.h" />
+    <ClInclude Include="include\utils\Constants.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

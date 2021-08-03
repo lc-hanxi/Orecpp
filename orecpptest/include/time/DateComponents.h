@@ -168,40 +168,40 @@ public:
      * in year -4713 as can be seen in other documents or programs that obey
      * a different convention (for example the <code>convcal</code> utility).</p>
      */
-    static const DateComponents* JULIAN_EPOCH;
+    static const DateComponents JULIAN_EPOCH;
 
     /** Reference epoch for modified julian dates: 1858-11-17. */
-    static const DateComponents* MODIFIED_JULIAN_EPOCH;
+    static const DateComponents MODIFIED_JULIAN_EPOCH;
 
     /** Reference epoch for 1950 dates: 1950-01-01. */
-    static const DateComponents* FIFTIES_EPOCH;
+    static const DateComponents FIFTIES_EPOCH;
 
     /** Reference epoch for CCSDS Time Code Format (CCSDS 301.0-B-4): 1958-01-01. */
-    static const DateComponents* CCSDS_EPOCH;
+    static const DateComponents CCSDS_EPOCH;
 
     /** Reference epoch for Galileo System Time: 1999-08-22. */
-    static const DateComponents* GALILEO_EPOCH;
+    static const DateComponents GALILEO_EPOCH;
 
     /** Reference epoch for GPS weeks: 1980-01-06. */
-    static const DateComponents* GPS_EPOCH;
+    static const DateComponents GPS_EPOCH;
 
     /** Reference epoch for QZSS weeks: 1980-01-06. */
-    static const DateComponents* QZSS_EPOCH;
+    static const DateComponents QZSS_EPOCH;
 
     /** Reference epoch for IRNSS weeks: 1999-08-22. */
-    static const DateComponents* IRNSS_EPOCH;
+    static const DateComponents IRNSS_EPOCH;
 
     /** Reference epoch for BeiDou weeks: 2006-01-01. */
-    static const DateComponents* BEIDOU_EPOCH;
+    static const DateComponents BEIDOU_EPOCH;
 
     /** Reference epoch for GLONASS four-year interval number: 1996-01-01. */
-    static const DateComponents* GLONASS_EPOCH;
+    static const DateComponents GLONASS_EPOCH;
 
     /** J2000.0 Reference epoch: 2000-01-01. */
-    static const DateComponents* J2000_EPOCH;
+    static const DateComponents J2000_EPOCH;
 
     /** Java Reference epoch: 1970-01-01. */
-    static const DateComponents* JAVA_EPOCH;
+    static const DateComponents JAVA_EPOCH;
 
     /** Maximum supported date.
      * <p>
@@ -210,7 +210,7 @@ public:
      * </p>
      * @since 9.0
      */
-    static const DateComponents* MAX_EPOCH;
+    static const DateComponents MAX_EPOCH;
 
     /** Maximum supported date.
      * <p>
@@ -219,7 +219,7 @@ public:
      * </p>
      * @since 9.0
      */
-    static const DateComponents* MIN_EPOCH;
+    static const DateComponents MIN_EPOCH;
 
     /** Serializable UID. */
     static const int64_t serialVersionUID = -2462694707837970938L;

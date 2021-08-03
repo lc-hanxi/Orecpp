@@ -2,8 +2,8 @@
 #include "utils/Constants.h"
 #include <cmath>
 
-const TimeComponents* TimeComponents::H00 = new TimeComponents(0, 0, 0);
-const TimeComponents* TimeComponents::H12 = new TimeComponents(12, 0, 0);
+const TimeComponents TimeComponents::H00(0, 0, 0);
+const TimeComponents TimeComponents::H12(12, 0, 0);
 
 TimeComponents::TimeComponents(int hour, int minute, double second)
 	:TimeComponents(hour, minute, second, 0)

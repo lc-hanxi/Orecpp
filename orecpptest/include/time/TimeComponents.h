@@ -227,10 +227,10 @@ private:
 
 public:
     /** Constant for commonly used hour 00:00:00. */
-    static const TimeComponents* H00;
+    static const TimeComponents H00;
 
     /** Constant for commonly used hour 12:00:00. */
-    static const TimeComponents* H12;
+    static const TimeComponents H12;
 
 private:
 

@@ -21,7 +21,7 @@ public:
      *
      * @see TimeScales#getJulianEpoch()
      */
-    static const DateTimeComponents* JULIAN_EPOCH;
+    static const DateTimeComponents JULIAN_EPOCH;
 
 private:
     /** Serializable UID. */

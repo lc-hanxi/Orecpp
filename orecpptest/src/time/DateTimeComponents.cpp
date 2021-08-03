@@ -2,7 +2,7 @@
 #include "utils/Constants.h"
 #include <cmath>
 
-const DateTimeComponents* DateTimeComponents::JULIAN_EPOCH = new DateTimeComponents(*DateComponents::JULIAN_EPOCH, *TimeComponents::H12);
+const DateTimeComponents DateTimeComponents::JULIAN_EPOCH(DateComponents::JULIAN_EPOCH, TimeComponents::H12);
 
 DateTimeComponents::DateTimeComponents(DateComponents date, TimeComponents time)
 	:date(date), time(time)
@@ -18,7 +18,7 @@ DateTimeComponents::DateTimeComponents(int year, int month, int day, int hour, i
 }
 
 DateTimeComponents::DateTimeComponents(int year, int month, int day)
-	:date(year, month, day), time(*TimeComponents::H00)
+	:date(year, month, day), time(TimeComponents::H00)
 {
 
 }

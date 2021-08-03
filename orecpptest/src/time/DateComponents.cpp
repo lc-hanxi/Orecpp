@@ -191,20 +191,20 @@ public:
 };
 
 
-const DateComponents* DateComponents::JULIAN_EPOCH = new DateComponents(-4712, 1, 1);
-const DateComponents* DateComponents::MODIFIED_JULIAN_EPOCH = new DateComponents(1858, 11, 17);
-const DateComponents* DateComponents::FIFTIES_EPOCH = new DateComponents(1950, 1, 1);
-const DateComponents* DateComponents::CCSDS_EPOCH = new DateComponents(1958, 1, 1);
-const DateComponents* DateComponents::GALILEO_EPOCH = new DateComponents(1999, 8, 22);
-const DateComponents* DateComponents::GPS_EPOCH = new DateComponents(1980, 1, 6);
-const DateComponents* DateComponents::QZSS_EPOCH = new DateComponents(1980, 1, 6);
-const DateComponents* DateComponents::IRNSS_EPOCH = new DateComponents(1999, 8, 22);
-const DateComponents* DateComponents::BEIDOU_EPOCH = new DateComponents(2006, 1, 1);
-const DateComponents* DateComponents::GLONASS_EPOCH = new DateComponents(1996, 1, 1);
-const DateComponents* DateComponents::J2000_EPOCH = new DateComponents(2000, 1, 1);
-const DateComponents* DateComponents::JAVA_EPOCH = new DateComponents(1970, 1, 1);
-const DateComponents* DateComponents::MAX_EPOCH = new DateComponents(INT_MAX);
-const DateComponents* DateComponents::MIN_EPOCH = new DateComponents(INT_MIN);
+const DateComponents DateComponents::JULIAN_EPOCH(-4712, 1, 1);
+const DateComponents DateComponents::MODIFIED_JULIAN_EPOCH(1858, 11, 17);
+const DateComponents DateComponents::FIFTIES_EPOCH(1950, 1, 1);
+const DateComponents DateComponents::CCSDS_EPOCH(1958, 1, 1);
+const DateComponents DateComponents::GALILEO_EPOCH(1999, 8, 22);
+const DateComponents DateComponents::GPS_EPOCH(1980, 1, 6);
+const DateComponents DateComponents::QZSS_EPOCH(1980, 1, 6);
+const DateComponents DateComponents::IRNSS_EPOCH(1999, 8, 22);
+const DateComponents DateComponents::BEIDOU_EPOCH(2006, 1, 1);
+const DateComponents DateComponents::GLONASS_EPOCH(1996, 1, 1);
+const DateComponents DateComponents::J2000_EPOCH(2000, 1, 1);
+const DateComponents DateComponents::JAVA_EPOCH(1970, 1, 1);
+const DateComponents DateComponents::MAX_EPOCH(INT_MAX);
+const DateComponents DateComponents::MIN_EPOCH(INT_MIN);
 
 const YearFactory* DateComponents::PROLEPTIC_JULIAN_FACTORY = new ProlepticJulianFactory();
 const YearFactory* DateComponents::JULIAN_FACTORY = new JulianFactory();
@@ -219,7 +219,7 @@ DateComponents::DateComponents(int year, int month, int day)
 }
 
 DateComponents::DateComponents(int year, int dayNumber)
-    : DateComponents(*J2000_EPOCH, DateComponents(year - 1, 12, 31).getJ2000Day() + dayNumber)
+    : DateComponents(J2000_EPOCH, DateComponents(year - 1, 12, 31).getJ2000Day() + dayNumber)
 {
 
 }
